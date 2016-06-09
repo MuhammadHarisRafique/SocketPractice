@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocketDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tok-sz-Cx0">
+                                <rect key="frame" x="20" y="69" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="YC9-W6-iPR"/>
+                                </constraints>
+                                <state key="normal" title="LogOut">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uda-8l-LbK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-oZ-5Ta">
+                                <rect key="frame" x="20" y="28" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ov-PX-Jst">
+                                <rect key="frame" x="178" y="107" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reconnect">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnReconnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOb-Kz-RYG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Nd-sZ-aa7">
+                                <rect key="frame" x="178" y="69" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Hc-nj-3jC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R8O-oZ-5Ta" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="0gH-a7-3mh"/>
+                            <constraint firstItem="4Ov-PX-Jst" firstAttribute="top" secondItem="0Nd-sZ-aa7" secondAttribute="bottom" constant="8" id="1F6-bs-NdP"/>
+                            <constraint firstItem="0Nd-sZ-aa7" firstAttribute="width" secondItem="tok-sz-Cx0" secondAttribute="width" id="BF9-Pr-K7e"/>
+                            <constraint firstItem="R8O-oZ-5Ta" firstAttribute="trailing" secondItem="0Nd-sZ-aa7" secondAttribute="trailing" id="Jlv-vI-5hU"/>
+                            <constraint firstItem="R8O-oZ-5Ta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RsJ-9r-Jc1"/>
+                            <constraint firstItem="R8O-oZ-5Ta" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Rxx-d4-yNA"/>
+                            <constraint firstItem="tok-sz-Cx0" firstAttribute="baseline" secondItem="0Nd-sZ-aa7" secondAttribute="baseline" id="cMB-OU-fJj"/>
+                            <constraint firstItem="4Ov-PX-Jst" firstAttribute="trailing" secondItem="0Nd-sZ-aa7" secondAttribute="trailing" id="dL0-8t-PRk"/>
+                            <constraint firstItem="tok-sz-Cx0" firstAttribute="top" secondItem="R8O-oZ-5Ta" secondAttribute="bottom" constant="20" id="kF0-YV-AM4"/>
+                            <constraint firstItem="4Ov-PX-Jst" firstAttribute="leading" secondItem="0Nd-sZ-aa7" secondAttribute="leading" id="nqF-4V-27P"/>
+                            <constraint firstItem="R8O-oZ-5Ta" firstAttribute="leading" secondItem="tok-sz-Cx0" secondAttribute="leading" id="urA-2P-EIg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="0Nd-sZ-aa7" id="YY5-0w-wGS"/>
+                        <outlet property="btnLogout" destination="tok-sz-Cx0" id="OYf-tA-0Tn"/>
+                        <outlet property="btnreconnect" destination="4Ov-PX-Jst" id="wAP-iG-spx"/>
+                        <outlet property="lblDiscnt" destination="R8O-oZ-5Ta" id="MhO-JC-bSD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="198"/>
+        </scene>
+    </scenes>
+</document>
